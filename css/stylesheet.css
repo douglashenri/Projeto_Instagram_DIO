@@ -1,0 +1,162 @@
+    *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+    }    
+	
+	:root {
+        --color_blue: #0095F6;
+        --color_site_background: rgb(243,243,243);
+    }
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+		display: flex; 
+		background-color: var(--color_site_background);
+        margin: 0;
+        padding: 0;        
+        justify-content: center; 
+    }
+
+    #site{
+        
+        align-items: center; 
+        justify-content: start; 
+		display: flex; 
+        width: 60%;
+        height: 100vh;    
+    }
+
+            #coluna_celular{
+                
+                align-items: center;
+                justify-content: center;
+				display: flex;
+                width: 50%;
+            }
+                
+                #coluna_celular > img{
+                    height: 35rem;
+                }
+
+            #coluna_login{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 50%;
+                min-height: 35rem;
+            }
+            
+                .loginBloco{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: white;
+                    width: 100%;
+                    padding: 1.3rem 0;
+                    border: 1px solid lightgray;
+                }
+
+                .loginBloco:nth-child(1){
+                    min-height: 19rem;
+                }
+
+                    #login_logo > img{
+                        height: 3rem;
+                    }
+
+                    #photoLogin{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;   
+                        border-radius: 100%;
+                        overflow: hidden;
+                    }
+
+                    #photoLogin > img{
+                        height: 6rem;                    
+                    }
+
+                    #login_botoes{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-direction: column;
+                    }
+
+                    .loginInstagram{
+                        background-color: var(--color_blue);
+                        color: white;
+                        padding: 8px;
+                        border-radius: 4px;
+                    }
+
+                    .logoutInstagram{
+                        color:#0095F6;
+                        margin-top: 1rem;
+                    }
+
+                    #loginRegistro > p{
+                        color: rgb(160,160,160);
+                        text-align: center;
+                    }
+
+                    #login_terceiroBloco {
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       width: 100%;
+                       padding: 1.3rem 0;
+                    }
+
+                    .download_app{
+                        display: flex;                        
+                        width: 100%;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+
+                    .botoes_link{
+                        height: 3rem;
+                        width: 10rem;
+                    }
+
+                    .download_app > a > img{
+                        width:150px;
+                        height:70px;
+                    }
+
+@media (max-width: 1024px){
+
+    #site{
+        width: 80%;
+    }    
+}
+
+@media (max-width: 650px){
+
+    #site{
+        width: 90%;
+    }  
+    
+    #coluna_celular{
+        display: none;
+    }
+
+    #coluna_login{
+        width: 100%;
+    }
+
+    .loginBloco{
+        background-color: transparent;
+        border: none;
+    }
+}
